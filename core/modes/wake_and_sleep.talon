@@ -5,7 +5,7 @@ mode: all
     user.mouse_wake()
     user.history_enable()
     user.talon_mode()
-^sleep all [<phrase>]$:
+^sleep all [<phrase>]$
     user.switcher_hide_running()
     user.history_disable()
     user.homophones_hide()
@@ -13,5 +13,5 @@ mode: all
     user.mouse_sleep()
     speech.disable()
     user.engine_sleep()
-^talon sleep [<phrase>]$: speech.disable()
-^talon wake$: speech.enable()
+^sleepeth [<phrase>]$: speech.disable()
+^waketh$: speech.enable()
